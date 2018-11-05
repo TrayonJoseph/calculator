@@ -6,16 +6,43 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  </head>
+    
+</head>
   <body>
+    <div class="container"> 
     <div id="jumbotronT" class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-1">Calculator</h1>
           
         </div>
       </div>
+      
+      <form name="Calculator">
+            <div class="container1">
+                    <input type="text" id = "currentValue" name="sum" class="item-header" value="" disabled="true">
+                    <input type="button" onClick="Calculator.sum.value = '' " class="numberButton Op" value="AC">
+                    <input type="button" onClick="Calculator.sum.value *= -1" class="numberButton Op" value="+/-">
+                    <input type="button" onClick="Calculator.sum.value += '/' " class="numberButton Op" value="%">
+                    <input type="button" onClick="Calculator.sum.value += '+' " class="numberButton Op" value="+">
+                    <input type="button" onClick="Calculator.sum.value += '7' " class="numberButton" value="7">
+                    <input type="button" onClick="Calculator.sum.value += '8' " class="numberButton" value="8">
+                    <input type="button" onClick="Calculator.sum.value += '9' " class="numberButton" value="9">
+                    <input type="button" onClick="Calculator.sum.value += '*' " class="numberButton Op" value="X">
+                    <input type="button" onClick="Calculator.sum.value += '4' " class="numberButton" value="4">
+                    <input type="button" onClick="Calculator.sum.value += '5' " class="numberButton" value="5">
+                    <input type="button" onClick="Calculator.sum.value += '6' " class="numberButton" value="6">
+                    <input ttpe="button" onClick="Calculator.sum.value +=  '-' " class="numberButton Op" value="-">
+                    <input type="button" onClick="Calculator.sum.value += '1' " class="numberButton" value="1">
+                    <input type="button" onClick="Calculator.sum.value += '2' " class="numberButton" value="2">
+                    <input type="button" onClick="Calculator.sum.value += '3' " class="numberButton" value="3">
+                    <input type="button" onClick="Calculator.sum.value = eval(Calculator.sum.value)" class="numberButton Op" value="=" >
+                    <input type="button" onClick="Calculator.sum.value += '0' " class="numberButton" value="0">
+                    <input type="button" onClick="Calculator.sum.value += '.' " class="numberButton Op" value=".">
+                </div>  
+        
 
-
+      
+      </form>
 
 
 
